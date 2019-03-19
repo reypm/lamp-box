@@ -11,8 +11,8 @@ fi
 
 cowsay Creating VirtualHost .... please wait
 
-sudo cp /vagrant/files/custom-httpd.conf /etc/httpd/conf.d/custom-httpd.conf
-sudo cp /vagrant/files/vhosts.conf /etc/httpd/conf.d
+sudo cp -rf /vagrant/files/custom-httpd.conf /etc/httpd/conf.d/custom-httpd.conf
+sudo cp -rf /vagrant/files/vhosts.conf /etc/httpd/conf.d
 sudo service httpd restart
 
 cowsay Cleaning the house .... please wait

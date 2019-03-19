@@ -30,11 +30,11 @@ sudo wget -q https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5
 sudo yum install -y wkhtmltox-0.12.5-1.centos6.x86_64.rpm
 sudo rm -f wkhtmltox-0.12.5-1.centos6.x86_64.rpm
 
-sudo cp /vagrant/files/zz-custom.ini /etc/php.d/zz-custom.ini
-sudo cp /vagrant/files/xdebug.ini /etc/php.d/xdebug.ini
+sudo cp -rf /vagrant/files/zz-custom.ini /etc/php.d/zz-custom.ini
+sudo cp -rf /vagrant/files/xdebug.ini /etc/php.d/xdebug.ini
 sudo cp -rf /vagrant/files/selinux_config /etc/selinux/config
 
-sudo cp /etc/localtime /root/old.timezone
+sudo cp -rf /etc/localtime /root/old.timezone
 sudo rm -rf /etc/localtime
 sudo ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
 

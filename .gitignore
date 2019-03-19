@@ -1,5 +1,7 @@
 vagrant
 .vagrant
 .idea
+files/vhosts.conf
 files/db/*
 .DS_Store
+Vagrantfile
